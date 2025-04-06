@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-    --color-primary: rebeccapurple;
+  --color-primary: hsl(156, 100%, 10%); /* #00321E */
+  --color-secondary: hsl(167, 29%, 22%); /* # 284841 */
+  --accent-color: #f55f42;
+  --body-color: #f7f4ee;
+  --beige-color: #f5f5dc;
 }
