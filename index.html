@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Magpie SoftTech</title>
   </head>
   <body>
-    <header class="header py-4 bg-[url(/src/assets/images/home-banner-img.jpg)] bg-cover bg-no-repeat bg-center h-[80vh]">
+    <header
+      class="header py-4 bg-[url(/src/assets/images/home-banner-img.jpg)] bg-cover bg-no-repeat bg-center h-[100vh] md:h-[80vh]"
+    >
       <div class="container">
         <nav class="header-nav flex justify-between items-center flex-wrap">
           <a href="/" rel="noreferrer noopener">
@@ -21,7 +29,9 @@
               />
             </figure>
           </a>
-          <ul class="header-links-wrapper flex flex-wrap gap-12 [&_a]:text-primary [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-secondary [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4">
+          <ul
+            class="header-links-wrapper flex flex-wrap gap-12 [&_a]:text-primary [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-secondary [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4"
+          >
             <li><a href="/">Home</a></li>
             <li><a href="#">Web Development</a></li>
             <li><a href="#">Web Training</a></li>
@@ -30,14 +40,16 @@
           </ul>
         </nav>
 
-        <section class="hero py-4 lg:py-6 lg:pt-28">
+        <section class="hero py-4 lg:py-6 pt-[24vh] lg:pt-28">
           <div class="wrapper">
-            <div class="hero-content p-4 rounded-lg bg-primary/90 text-white ml-auto text- max-w-[60ch] shadow-2xl shadow-primary text-shadow-xs text-shadow-black text-center">
-              <h1 class="text-4xl font-semibold mb-4 lg:mb-6">
+            <div
+              class="hero-content p-4 rounded-lg bg-primary/90 text-white ml-auto text- max-w-[60ch] shadow-2xl shadow-primary text-shadow-xs text-shadow-black text-center"
+            >
+              <h1 class="text-2xl lg:text-4xl font-semibold mb-4 lg:mb-6">
                 We create <span>Websites</span> for Businessess that want
                 results<span>.</span>
               </h1>
-              <p class="text-2xl">
+              <p class="text-xl lg:text-2xl">
                 We design and build customs websites to drive leads, close deals
                 and grow your business.
               </p>
@@ -53,22 +65,24 @@
     </header>
 
     <main>
-      <section class="easy-business">
-        <div class="wrapper">
-          <div class="easy-content">
+      <section class="easy-business py-4 lg:py-8 lg:pt-24">
+        <div class="container">
+          <div class="easy-content flex flex-col items-center">
             <div class="easy-heading relative">
-              <h2>
+              <h2 class="text-2xl lg:text-4xl lg:mb-11 text-center">
                 Business is a whole lot easier if your customers come to you
               </h2>
               <span class="heading-line-center"></span>
             </div>
 
-            <p>
+            <p class="text-center">
               We create attractors. Gorgeous website and compelling brand will
               provide value for your business.
             </p>
 
-            <button class="easy-button btn-primary">
+            <button
+              class="easy-button btn-primary mt-10 bg-primary py-3 px-6 rounded-lg text-white"
+            >
               <a href="#">How it works</a>
             </button>
           </div>
@@ -76,54 +90,60 @@
       </section>
       <!-- ./Section {Easy Business} -->
 
-      <section class="services">
-        <div class="wrapper">
+      <section class="services py-4 lg:py-8">
+        <div class="container">
           <span class="eyebrow">Services</span>
           <h2>
             Result Driven Solutions! What we provide to our valued customers
           </h2>
 
-          <div class="services-card-wrap">
-            <div class="service-card">
-              <div class="top">
-                <figure class="service-card-icon">
+          <div
+            class="services-card-wrap grid gap-5 grid-cols-[repeat(auto-fit,_minmax(340px,_1fr))] [&_svg]:w-[70px]"
+          >
+            <div class="service-card lg:px-6 lg:py-11">
+              <div class="top flex justify-between items-center mb-10">
+                <figure class="service-card-icon max-w-20">
                   <svg
+                    class="[&_path]:fill-primary"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="15.45 4.23 69.11 71.53"
                   >
                     <path
                       d="M80.9606 65.3596H19.0391C17.0626 65.3596 15.4531 63.7502 15.4531 61.7736V17.1408C15.4531 15.1642 17.0626 13.5548 19.0391 13.5548H34.2663L34.696 14.3829L35.9225 16.2735C36.6881 17.4532 36.7741 18.9609 36.1413 20.2109C35.7975 20.8984 35.5006 21.6093 35.2584 22.3359C34.8209 23.664 33.6959 24.6719 32.321 24.9609L30.1726 25.4218V28.9608L32.321 29.4218C33.696 29.7187 34.821 30.7265 35.2584 32.0468C35.4928 32.7733 35.7897 33.4842 36.1413 34.1718C36.7741 35.4218 36.6881 36.9296 35.9225 38.1092L34.7272 39.9529L37.2351 42.4608L39.0788 41.2655C40.2585 40.4998 41.7662 40.4139 43.0162 41.0467C43.6959 41.3905 44.4146 41.6874 45.1491 41.9295C46.4694 42.367 47.4772 43.4921 47.7741 44.867L48.235 47.0154H51.7819L52.2428 44.867C52.5397 43.492 53.5397 42.367 54.8678 41.9295C55.5944 41.6874 56.3131 41.3905 57.0007 41.0467C58.2507 40.4139 59.7585 40.4999 60.9381 41.2655L62.7818 42.4608L65.2897 39.9529L64.0943 38.1092C63.3287 36.9295 63.2428 35.4218 63.8756 34.1718C64.2193 33.4843 64.5162 32.7733 64.7584 32.0468C65.1959 30.7187 66.321 29.7108 67.6958 29.4218L69.8443 28.9608V25.414L67.6958 24.953C66.3208 24.6562 65.1958 23.6562 64.7584 22.328C64.5162 21.5937 64.2194 20.8828 63.8756 20.1952C63.2428 18.9452 63.3287 17.4296 64.0943 16.2578L65.3209 14.3672L65.7506 13.5391H80.9777C82.9543 13.5391 84.5637 15.1485 84.5637 17.1251V61.7651C84.5559 63.7495 82.9387 65.3588 80.9622 65.3588L80.9606 65.3596ZM19.0391 16.6725C18.7813 16.6725 18.5782 16.8834 18.5782 17.1334V61.7734C18.5782 62.0312 18.7891 62.2344 19.0391 62.2344H80.9606C81.2184 62.2344 81.4215 62.0234 81.4215 61.7734V17.1406C81.4215 16.8828 81.2106 16.6796 80.9606 16.6796H67.5387L66.7028 17.9687C66.5387 18.2187 66.5231 18.539 66.6559 18.7968C67.0699 19.6171 67.4293 20.4765 67.7184 21.3594C67.8121 21.6328 68.0465 21.8438 68.3434 21.9063L70.5544 22.375C71.9528 22.6719 72.9684 23.9297 72.9684 25.3594V29.0313C72.9684 30.461 71.9528 31.7187 70.5544 32.0157L68.3434 32.4845C68.0543 32.547 67.8121 32.7579 67.7184 33.0313C67.4293 33.9063 67.0778 34.7658 66.6559 35.5939C66.5231 35.8517 66.5387 36.172 66.7028 36.422L67.9371 38.3205C68.7184 39.5236 68.5465 41.1252 67.5387 42.133L64.945 44.7267C63.9293 45.7346 62.3278 45.9064 61.1324 45.1252L59.234 43.8986C58.984 43.7346 58.6637 43.7189 58.4058 43.8518C57.5855 44.2658 56.7261 44.6252 55.8433 44.9143C55.562 45.008 55.3589 45.2424 55.2964 45.5314L54.8277 47.7424C54.5308 49.1409 53.2808 50.1564 51.8432 50.1564H48.1714C46.7417 50.1564 45.4839 49.1408 45.1869 47.7424L44.7182 45.5393C44.6557 45.2502 44.4448 45.008 44.1713 44.9221C43.2885 44.6331 42.4292 44.2737 41.6088 43.8596C41.3431 43.7268 41.0306 43.7424 40.7806 43.9065L38.8822 45.133C37.6869 45.9065 36.0775 45.7424 35.0696 44.7346L32.4759 42.1409C31.4681 41.1253 31.2962 39.5237 32.0775 38.3283L33.304 36.4299C33.4681 36.1799 33.4837 35.8596 33.3509 35.6018C32.9368 34.7736 32.5775 33.9143 32.2884 33.0392C32.1947 32.7657 31.9603 32.5548 31.6634 32.4923L29.4524 32.0236C28.054 31.7267 27.0384 30.4767 27.0384 29.047V25.3751C27.0384 23.9454 28.054 22.6954 29.4524 22.3907L31.6634 21.922C31.9525 21.8595 32.1947 21.6485 32.2806 21.3751C32.5696 20.5001 32.929 19.6407 33.3431 18.8125C33.4759 18.5469 33.4603 18.2344 33.2962 17.9844L32.4603 16.6875H19.0384L19.0391 16.6725Z"
-                      fill="white"
+                      fill="#28DF99"
                     />
                     <path
                       d="M57.6547 75.7657H42.3418V62.2344H57.6547V75.7657ZM45.4672 72.6407H54.5298V65.3672H45.4672V72.6407Z"
-                      fill="white"
+                      fill="#28DF99"
                     />
-                    <path d="M37 72.6396H63V75.7646H37V72.6396Z" fill="white" />
+                    <path
+                      d="M37 72.6396H63V75.7646H37V72.6396Z"
+                      fill="#28DF99"
+                    />
                     <path
                       d="M17.0059 53.6328H82.983V56.7578H17.0059V53.6328Z"
-                      fill="white"
+                      fill="#28DF99"
                     />
                     <path
                       d="M41.873 33.6719L35.7246 27.1954L41.873 20.7109L44.1386 22.8672L40.037 27.1954L44.1386 31.5157L41.873 33.6719Z"
-                      fill="white"
+                      fill="#28DF99"
                     />
                     <path
                       d="M58.1249 33.6719L55.8594 31.5157L59.9609 27.1954L55.8594 22.8672L58.1249 20.7109L64.2734 27.1954L58.1249 33.6719Z"
-                      fill="white"
+                      fill="#28DF99"
                     />
                     <path
                       d="M51.6783 19.126L54.5617 20.3308L48.3229 35.2593L45.4395 34.0545L51.6783 19.126Z"
-                      fill="white"
+                      fill="#28DF99"
                     />
                     <path
                       d="M51.8341 50.1487H48.1623C46.7326 50.1487 45.4748 49.1331 45.1778 47.7347L44.7091 45.5315C44.6466 45.2425 44.4356 45.0003 44.1622 44.9144C43.2794 44.6253 42.4201 44.2659 41.5997 43.8519C41.334 43.719 41.0215 43.7347 40.7715 43.8987L38.8731 45.1253C37.6778 45.8987 36.0684 45.7347 35.0605 44.7268L32.4668 42.1331C31.459 41.1175 31.2871 39.516 32.0684 38.3206L33.2949 36.4221C33.459 36.1721 33.4746 35.8518 33.3418 35.594C32.9277 34.7659 32.5684 33.9066 32.2793 33.0314C32.1855 32.758 31.9512 32.5471 31.6543 32.4846L29.4433 32.0158C28.0449 31.7189 27.0293 30.469 27.0293 29.0392V25.3674C27.0293 23.9377 28.0449 22.6877 29.4433 22.383L31.6543 21.9142C31.9434 21.8517 32.1856 21.6408 32.2715 21.3673C32.5605 20.4923 32.9199 19.6329 33.334 18.8048C33.4668 18.5391 33.4512 18.2266 33.2871 17.9766L32.0527 16.0782C32.0059 16.0079 31.959 15.9298 31.9199 15.8438C31.6387 15.3048 31.5215 14.711 31.5762 14.1094C31.5918 13.9844 31.6074 13.8594 31.6387 13.7266C31.7637 13.1719 32.0449 12.6641 32.4512 12.2656L35.0449 9.67189C36.0605 8.66407 37.662 8.4922 38.8575 9.26563L40.7559 10.5C41.0059 10.6641 41.3262 10.6797 41.584 10.5469C42.4122 10.1328 43.2715 9.77343 44.1466 9.48437C44.42 9.39062 44.631 9.15625 44.6935 8.85937L45.1622 6.64838C45.4591 5.24993 46.7091 4.23438 48.1466 4.23438H51.8185C53.2482 4.23438 54.5059 5.25 54.8029 6.64838L55.2717 8.85152C55.3342 9.14057 55.5451 9.38277 55.8185 9.47652C56.6857 9.76557 57.553 10.1171 58.3811 10.539C58.6467 10.6718 58.9592 10.6562 59.2092 10.4921L61.1077 9.25777C62.303 8.48433 63.9124 8.6484 64.9202 9.65621L67.514 12.2499C67.9124 12.6484 68.1936 13.1562 68.3264 13.7109C68.3577 13.8359 68.3733 13.9609 68.3889 14.0937C68.4514 14.6953 68.3343 15.2969 68.053 15.8359C68.0139 15.914 67.9671 15.9921 67.9124 16.0703L66.7014 17.9687C66.5374 18.2187 66.5218 18.539 66.6546 18.7968C67.0686 19.6171 67.428 20.4765 67.7171 21.3594C67.8108 21.6328 68.0452 21.8438 68.3421 21.9063L70.5531 22.375C71.9515 22.6719 72.9671 23.9297 72.9671 25.3594V29.0313C72.9671 30.461 71.9514 31.7187 70.5531 32.0157L68.3421 32.4845C68.053 32.547 67.8108 32.7579 67.7171 33.0313C67.428 33.9063 67.0764 34.7658 66.6546 35.5939C66.5218 35.8517 66.5374 36.172 66.7014 36.422L67.9358 38.3205C68.7171 39.5236 68.5452 41.1252 67.5374 42.133L64.9437 44.7267C63.928 45.7346 62.3265 45.9064 61.1311 45.1252L59.2327 43.8986C58.9827 43.7346 58.6623 43.7189 58.4045 43.8518C57.5842 44.2658 56.7248 44.6252 55.842 44.9143C55.5607 45.008 55.3576 45.2424 55.2951 45.5314L54.8263 47.7424C54.5138 49.1331 53.2638 50.1487 51.8342 50.1487L51.8341 50.1487ZM48.2247 47.0237H51.7715L52.2325 44.8753C52.5294 43.5003 53.5294 42.3753 54.8575 41.9378C55.5841 41.6956 56.3028 41.3988 56.9904 41.055C58.2404 40.4222 59.7482 40.5081 60.9278 41.2738L62.7715 42.4691L65.2794 39.9612L64.084 38.1175C63.3184 36.9378 63.2325 35.4301 63.8653 34.1801C64.209 33.5004 64.5059 32.7816 64.7481 32.0551C65.1856 30.7269 66.3107 29.7191 67.6855 29.4301L69.834 28.9691V25.4223L67.6855 24.9613C66.3105 24.6645 65.1855 23.6645 64.7481 22.3363C64.5059 21.602 64.209 20.891 63.8653 20.2035C63.2325 18.9535 63.3184 17.4379 64.084 16.266L65.2794 14.4223L62.7715 11.9145L60.9278 13.1098C59.7481 13.8754 58.2404 13.9613 56.9904 13.3285C56.3029 12.9848 55.5841 12.6879 54.8575 12.4457C53.5294 12.0082 52.5215 10.8831 52.2325 9.50828L51.7715 7.35985H48.2247L47.7637 9.50828C47.4669 10.8833 46.4669 12.0083 45.1388 12.4457C44.4122 12.6879 43.6935 12.9848 43.0059 13.3285C41.7559 13.9613 40.248 13.8754 39.0685 13.1098L37.2248 11.9145L34.7169 14.4223L35.9122 16.266C36.6778 17.4457 36.7638 18.9535 36.1309 20.2035C35.7872 20.891 35.4903 21.6019 35.2481 22.3285C34.8106 23.6566 33.6856 24.6645 32.3107 24.9535L30.1623 25.4144V28.9534L32.3107 29.4144C33.6857 29.7112 34.8107 30.719 35.2481 32.0394C35.4825 32.7659 35.7794 33.4768 36.1309 34.1644C36.7638 35.4144 36.6778 36.9222 35.9122 38.1018L34.7169 39.9455L37.2248 42.4534L39.0685 41.258C40.2481 40.4924 41.7559 40.4065 43.0059 41.0393C43.6856 41.383 44.4043 41.6799 45.1388 41.9221C46.4591 42.3596 47.4669 43.4847 47.7637 44.8595L48.2247 47.0237Z"
-                      fill="white"
+                      fill="#28DF99"
                     />
                   </svg>
                 </figure>
-                <span class="number">01</span>
+                <span class="number text-[64px] text-primary">01</span>
               </div>
 
               <div class="service-card-content">
@@ -134,14 +154,15 @@
                   that perfectly match your end goals.
                 </p>
 
-                <a href="#" class="link">Know more</a>
+                <a href="#" class="service-link">Know more</a>
               </div>
             </div>
 
-            <div class="service-card">
-              <div class="top">
-                <figure class="service-card-icon">
+            <div class="service-card lg:px-6 lg:py-11">
+              <div class="top flex justify-between items-center mb-10">
+                <figure class="service-card-icon max-w-20">
                   <svg
+                    class="[&_path]:fill-primary"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="16.25 11.25 67.5 57.5"
@@ -176,7 +197,7 @@
                     />
                   </svg>
                 </figure>
-                <span class="number">02</span>
+                <span class="number text-[64px] text-primary">02</span>
               </div>
 
               <div class="service-card-content">
@@ -187,14 +208,15 @@
                   dolorem quasi provident esse, quis ratione ut quibusdam ex.
                 </p>
 
-                <a href="#" class="link">Know more</a>
+                <a href="#" class="service-link">Know more</a>
               </div>
             </div>
 
-            <div class="service-card">
-              <div class="top">
-                <figure class="service-card-icon">
+            <div class="service-card lg:px-6 lg:py-11">
+              <div class="top flex justify-between items-center mb-10">
+                <figure class="service-card-icon max-w-20">
                   <svg
+                    class="[&_path]:fill-primary"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="30.18 17.38 67.64 67.62"
@@ -225,7 +247,7 @@
                     />
                   </svg>
                 </figure>
-                <span class="number">03</span>
+                <span class="number text-[64px] text-primary">03</span>
               </div>
 
               <div class="service-card-content">
@@ -236,14 +258,15 @@
                   dolorem quasi provident esse, quis ratione ut quibusdam ex.
                 </p>
 
-                <a href="#" class="link">Know more</a>
+                <a href="#" class="service-link">Know more</a>
               </div>
             </div>
 
-            <div class="service-card">
-              <div class="top">
-                <figure class="service-card-icon">
+            <div class="service-card lg:px-6 lg:py-11">
+              <div class="top flex justify-between items-center mb-10">
+                <figure class="service-card-icon max-w-20">
                   <svg
+                    class="[&_path]:fill-primary"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="17 7 66 66"
@@ -302,7 +325,7 @@
                     />
                   </svg>
                 </figure>
-                <span class="number">04</span>
+                <span class="number text-[64px] text-primary">04</span>
               </div>
 
               <div class="service-card-content">
@@ -313,14 +336,15 @@
                   dolorem quasi provident esse, quis ratione ut quibusdam ex.
                 </p>
 
-                <a href="#" class="link">Know more</a>
+                <a href="#" class="service-link">Know more</a>
               </div>
             </div>
 
-            <div class="service-card">
-              <div class="top">
-                <figure class="service-card-icon">
+            <div class="service-card lg:px-6 lg:py-11">
+              <div class="top flex justify-between items-center mb-10">
+                <figure class="service-card-icon max-w-20">
                   <svg
+                    class="[&_path]:fill-primary"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="25.37 5.25 49.26 69.5"
@@ -331,7 +355,7 @@
                     />
                   </svg>
                 </figure>
-                <span class="number">05</span>
+                <span class="number text-[64px] text-primary">05</span>
               </div>
 
               <div class="service-card-content">
@@ -342,13 +366,15 @@
                   dolorem quasi provident esse, quis ratione ut quibusdam ex.
                 </p>
 
-                <a href="#" class="link">Know more</a>
+                <a href="#" class="service-link">Know more</a>
               </div>
             </div>
-            <div class="service-card">
-              <div class="top">
-                <figure class="service-card-icon">
+
+            <div class="service-card lg:px-6 lg:py-11">
+              <div class="top flex justify-between items-center mb-10">
+                <figure class="service-card-icon max-w-20">
                   <svg
+                    class="[&_path]:fill-primary"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="19 18 90.13 91"
@@ -359,7 +385,7 @@
                     />
                   </svg>
                 </figure>
-                <span class="number">06</span>
+                <span class="number text-[64px] text-primary">06</span>
               </div>
 
               <div class="service-card-content">
@@ -370,7 +396,7 @@
                   dolorem quasi provident esse, quis ratione ut quibusdam ex.
                 </p>
 
-                <a href="#" class="link">Know more</a>
+                <a href="#" class="service-link">Know more</a>
               </div>
             </div>
           </div>
@@ -385,7 +411,6 @@
       </div>
     </footer>
 
-    
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

@@ -8,7 +8,43 @@
   --beige-color: #f5f5dc;
 }
 
+@layer base {
+  body {
+    font-family: "Playfair Display";
+  }
+
+  h1 {
+
+  }
+
+  h2 {
+    margin-bottom: 16px;
+    font-size: 2rem;
+    line-height: 46px;
+  }
+
+  h3 {
+    margin-bottom: 12px
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    font-family: "Inter";
+  }
+}
+
 @utility container {
     max-width: 1220px;
     margin-inline: auto;
+    padding-inline: 20px;
+}
+
+@utility service-link {
+  display:block;
+  margin-top: 18px;
+  color: var(--color-primary);
+  font-weight: 600;
 }
