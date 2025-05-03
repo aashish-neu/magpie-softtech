@@ -37,6 +37,10 @@
   p {
     font-family: "Inter";
   }
+
+  li {
+    font-family: "Inter";
+  }
 }
 
 @utility container {
