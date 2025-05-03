@@ -17,7 +17,9 @@
       class="header py-4 bg-[url(/src/assets/images/home-banner-img.jpg)] bg-cover bg-no-repeat bg-center h-[100vh] md:h-[80vh]"
     >
       <div class="container">
-        <nav class="header-nav flex justify-between items-center flex-wrap">
+        <nav
+          class="header-nav flex justify-between items-center flex-wrap gap-4"
+        >
           <a href="/" rel="noreferrer noopener">
             <figure class="header-logo max-w-20 mr-4">
               <img
@@ -30,7 +32,7 @@
             </figure>
           </a>
           <ul
-            class="header-links-wrapper flex flex-wrap gap-12 [&_a]:text-primary [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-secondary [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4"
+            class="max-sm:hidden header-links-wrapper flex flex-wrap gap-6 lg:gap-12 [&_a]:text-primary [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-secondary [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4"
           >
             <li><a href="/">Home</a></li>
             <li><a href="#">Web Development</a></li>
@@ -40,21 +42,25 @@
           </ul>
         </nav>
 
-        <section class="hero py-4 lg:py-6 pt-[24vh] lg:pt-28">
+        <section class="hero pt-[25vh] lg:pt-[12vh]">
           <div class="wrapper">
             <div
-              class="hero-content p-4 rounded-lg bg-primary/90 text-white ml-auto text- max-w-[60ch] shadow-2xl shadow-primary text-shadow-xs text-shadow-black text-center"
+              class="hero-content p-4 lg:py-12 rounded-lg bg-primary/90 text-white ml-auto text- max-w-[60ch] shadow-2xl shadow-primary text-shadow-xs text-shadow-black text-center"
             >
               <h1 class="text-2xl lg:text-4xl font-semibold mb-4 lg:mb-6">
-                We create <span>Websites</span> for Businessess that want
-                results<span>.</span>
+                We create
+                <span class="text-accent text-shadow-none">Websites</span> for
+                <span class="text-accent text-shadow-none">Businessess</span>
+                that want <span class="text-accent">results</span>.
               </h1>
               <p class="text-xl lg:text-2xl">
                 We design and build customs websites to drive leads, close deals
                 and grow your business.
               </p>
 
-              <button class="btn-primary mt-4 lg:mt-6">
+              <button
+                class="mt-4 lg:mt-6 border px-7 py-3 text-2xl transition-all rounded-sm hover:cursor-pointer hover:bg-white hover:text-primary"
+              >
                 <a href="/">Contact Us</a>
               </button>
             </div>
@@ -65,7 +71,7 @@
     </header>
 
     <main>
-      <section class="easy-business py-4 lg:py-8 lg:pt-24">
+      <section class="easy-business pt-8 py-4 lg:py-8 lg:pt-24">
         <div class="container">
           <div class="easy-content flex flex-col items-center">
             <div class="easy-heading relative">
@@ -81,7 +87,7 @@
             </p>
 
             <button
-              class="easy-button btn-primary mt-10 bg-primary py-3 px-6 rounded-lg text-white"
+              class="btn-primary mt-10 bg-primary py-3 px-6 rounded-lg text-white"
             >
               <a href="#">How it works</a>
             </button>
@@ -98,7 +104,7 @@
           </h2>
 
           <div
-            class="services-card-wrap grid gap-5 grid-cols-[repeat(auto-fit,_minmax(340px,_1fr))] [&_svg]:w-[70px] "
+            class="services-card-wrap grid gap-5 grid-cols-[repeat(auto-fit,_minmax(340px,_1fr))] pt-3 lg:pt-6 [&_svg]:w-[70px]"
           >
             <!-- Web Dev -->
             <div class="service-card lg:px-6 lg:py-11">
@@ -148,7 +154,7 @@
               </div>
 
               <div class="service-card-content">
-                <h3>Web Development</h3>
+                <h3 class="font-medium">Web Development</h3>
                 <p>
                   Whether you want to build the next big idea or map the
                   existing business process, our team creates web applications
@@ -203,9 +209,11 @@
               </div>
 
               <div class="service-card-content">
-                <h3>Programming Training</h3>
+                <h3 class="font-medium">Programming Training</h3>
                 <p>
-                  Our students are taught by career professionals who have worked in professional environment for many years including big international companies and brands.
+                  Our students are taught by career professionals who have
+                  worked in professional environment for many years including
+                  big international companies and brands.
                 </p>
 
                 <a href="#" class="service-link">Know more</a>
@@ -251,7 +259,7 @@
               </div>
 
               <div class="service-card-content">
-                <h3>QA and Testing</h3>
+                <h3 class="font-medium">QA and Testing</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Architecto laborum tenetur expedita repudiandae eaque optio
@@ -329,7 +337,7 @@
               </div>
 
               <div class="service-card-content">
-                <h3>Websites Updates</h3>
+                <h3 class="font-medium">Websites Updates</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Architecto laborum tenetur expedita repudiandae eaque optio
@@ -359,7 +367,7 @@
               </div>
 
               <div class="service-card-content">
-                <h3>Maintenance and Support</h3>
+                <h3 class="font-medium">Maintenance and Support</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Architecto laborum tenetur expedita repudiandae eaque optio
@@ -389,7 +397,7 @@
               </div>
 
               <div class="service-card-content">
-                <h3>Cyber Awareness</h3>
+                <h3 class="font-medium">Cyber Awareness</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Architecto laborum tenetur expedita repudiandae eaque optio
@@ -422,9 +430,19 @@
           </div>
 
           <div class="flags-wrap max-w-10/12 mx-auto">
-            <figure class="flex justify-center gap-12 lg:[&_img]:w-28">
-              <img src="./src/assets/images/british-flag.svg" alt="British flag" loading="lazy">
-              <img src="./src/assets/images/german-flag.svg" alt="German flag" loading="lazy">
+            <figure
+              class="flex justify-center gap-12 lg:[&_img]:w-28 transition-all [&_img]:hover:-translate-y-[8px]"
+            >
+              <img
+                src="./src/assets/images/british-flag.svg"
+                alt="British flag"
+                loading="lazy"
+              />
+              <img
+                src="./src/assets/images/german-flag.svg"
+                alt="German flag"
+                loading="lazy"
+              />
             </figure>
           </div>
         </div>
@@ -438,43 +456,58 @@
           <div class="flex flex-wrap gap-3 justify-between">
             <div class="logo-wrap w-full sm:w-2/5 lg:w-1/5">
               <figure class="mb-8 max-w-20">
-                <img src="./src/assets/images/magpie-brand-logo.png" width="1080" height="1080" alt="Company brand logo" loading="lazy">
+                <img
+                  src="./src/assets/images/magpie-brand-logo.png"
+                  width="1080"
+                  height="1080"
+                  alt="Company brand logo"
+                  loading="lazy"
+                />
               </figure>
-              <p>We help businesses grow by offering premium website and designs packages for progress.</p>
+              <p>
+                We help businesses grow by offering premium website and designs
+                packages for progress.
+              </p>
             </div>
 
             <!-- About -->
-             <div class="about-wrap w-1/2 sm:w-1/5 mt-2 sm:mt-10">
+            <div class="about-wrap w-1/2 sm:w-1/5 mt-2 sm:mt-10">
               <strong class="block mb-2 lg:mb-8">About</strong>
-              <ul class="[&_li]:not-last:mb-2.5 [&_li]:hover:text-accent [&_li]:cursor-pointer [&_li]:hover:underline [&_li]:hover:underline-offset-8 [&_li]:hover:decoration-2">
+              <ul
+                class="[&_li]:not-last:mb-2.5 [&_a]:hover:text-accent [&_li]:cursor-pointer [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-2"
+              >
                 <li><a href="./about.html">About Magpie</a></li>
                 <li><a href="./contact.html">Contact Us</a></li>
                 <li><a href="./about.html#faq">FAQ</a></li>
               </ul>
-             </div>
-            
+            </div>
+
             <!-- Legal -->
             <div class="legal-wrap w-1/2 sm:w-1/5 mt-2 sm:mt-10">
               <strong class="block mb-2 lg:mb-8">Legal</strong>
 
-              <ul class="[&_li]:not-last:mb-2.5 [&_li]:hover:text-accent [&_li]:cursor-pointer [&_li]:hover:underline [&_li]:hover:underline-offset-8 [&_li]:hover:decoration-2">
+              <ul
+                class="[&_li]:not-last:mb-2.5 [&_a]:hover:text-accent [&_li]:cursor-pointer [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-2"
+              >
                 <li><a href="./about.html">Terms & Conditions</a></li>
                 <li><a href="./contact.html">Privacy Policy</a></li>
                 <li><a href="./about.html#faq">Templates Policy</a></li>
               </ul>
-             </div>
-            
+            </div>
+
             <!-- Social Links -->
-            <div class="social-wrap w-full sm:w-1/5 mt-2 sm:mt-10">
+            <div class="social-wrap w-full lg:w-1/5 mt-2 sm:mt-10">
               <strong class="block mb-2 lg:mb-8">Follow</strong>
 
-              <ul class="[&_li]:not-last:mb-2.5 [&_li]:hover:text-accent [&_li]:cursor-pointer [&_li]:hover:underline [&_li]:hover:underline-offset-8 [&_li]:hover:decoration-2 flex gap-3 lg:gap-4 flex-wrap">
+              <ul
+                class="[&_li]:not-last:mb-2.5 [&_a]:hover:text-accent [&_li]:cursor-pointer [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-2 flex gap-3 lg:gap-4 flex-wrap"
+              >
                 <li><a href="./about.html">Facebook</a></li>
                 <li><a href="./contact.html">Instagram</a></li>
                 <li><a href="./about.html#faq">Tiktok</a></li>
                 <li><a href="./about.html#faq">Twitter | X</a></li>
               </ul>
-             </div>
+            </div>
           </div>
         </div>
       </div>
