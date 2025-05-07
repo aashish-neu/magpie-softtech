@@ -75,6 +75,12 @@
   background: var(--color-primary);
 }
 
+@utility hover-accent {
+  &:hover {
+    background-color: var(--color-accent);
+  }
+}
+
 @utility eyebrow {
   font-size: 20px;
   font-weight: 600;
