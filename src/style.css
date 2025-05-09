@@ -12,6 +12,7 @@
 @layer base {
   body {
     font-family: "Playfair Display";
+    /* background-color: var(--body-color); */
   }
 
   h1 {
@@ -74,6 +75,20 @@
   */
   clip-path: ellipse(145% 100% at 50% 100%);
   background: var(--color-primary);
+}
+
+@utility folded-background {
+  --r: 40px; /* 40 radius */
+
+  /* width: 300px; */
+  /* aspect-ratio: 1.5; */
+  background: var(--color-primary);
+  /* border-bottom-left-radius: var(--r); */
+  
+  mask:
+    radial-gradient(var(--r) at 100% 0,#0000 100%,#000 calc(100% + 1px))
+    0 0/var(--r) var(--r) no-repeat,
+    linear-gradient(#0000 var(--r),#000 0);
 }
 
 @utility hover-accent {
@@ -166,4 +181,18 @@
     radial-gradient(272.1px at 50% -236.25px,#0000 99%,#000 101%) 50% 135px/540px 100% repeat-x;
   -webkit-mask: var(--mask);
           mask: var(--mask);
+} */
+
+/* HTML: <div class="folded-rectangle"></div> */
+/* .folded-rectangle {
+  --r: 40px;  radius 
+
+  width: 300px;
+  aspect-ratio: 1.5;
+  background: #519548;
+  border-bottom-left-radius: var(--r);
+  mask:
+    radial-gradient(var(--r) at 100% 0,#0000 100%,#000 calc(100% + 1px))
+    0 0/var(--r) var(--r) no-repeat,
+    linear-gradient(#0000 var(--r),#000 0);
 } */
