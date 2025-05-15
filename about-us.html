@@ -11,15 +11,16 @@
       rel="stylesheet"
     />
     <title>Magpie SoftTech | Services</title>
-    <script type="module" crossorigin src="./assets/main-IzEqd5iI.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-DJ3OZbod.css">
+    <script type="module" crossorigin src="./assets/main-CGgy1u3l.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-Ab7hvQqw.css">
   </head>
   <body>
     <header class="header pb-4 bg-primary">
       <div class="containernot max-w-[1440px] mx-auto">
         <nav
-          class="header-nav py-2 rounded-b-lg px-2 lg:px-6 bg-white flex justify-between items-center flex-wrap gap-4 max-md:justify-center shadow-sm"
+          class="header-nav py-2 rounded-b-lg px-2 lg:px-6 bg-white flex justify-between md:justify-between md:items-center flex-wrap gap-4 max-md:justify-center shadow-sm"
         >
+          <!-- Header logo -->
           <a href="/" rel="noreferrer noopener">
             <figure class="header-logo max-w-20 mr-4">
               <img
@@ -31,8 +32,55 @@
               />
             </figure>
           </a>
+
+          <!-- Hamburger and Nav items -->
+          <button id="hamburger" class="p-2 text-black md:hidden">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- mobile menu -->
+          <nav id="menu" class="hidden flex">
+            <ul
+              class="absolute inset-0 bg-primary z-10 flex flex-col justify-center items-center gap-10 [&_a]:text-white [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-accent [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4"
+            >
+              <li><a href="/">Home</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./about-us.html">About Us</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+            <!-- icon -->
+            <button id="mobile-hamburger" class="text-white md:hidden z-20 ml-auto">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </nav>
+
+          <!-- desktop menu -->
           <ul
-            class="max-sm:hidden header-links-wrapper flex flex-wrap gap-6 lg:gap-12 [&_a]:text-primary [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-accent [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4"
+            class="header-links-wrapper flex flex-wrap gap-6 lg:gap-12 [&_a]:text-primary [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-accent [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4"
           >
             <li><a href="/">Home</a></li>
             <li><a href="./services.html">Services</a></li>
@@ -77,7 +125,12 @@
                 designers, right at your fingertips.
               </p>
 
-              <p class="lg:text-xl">Magpie helps you make your website and brand popular; attracting customers with modern and professional design. Our experienced brand specialist, designers, developers, ui/ux engineers will be at your beck and call for your business or company.</p>
+              <p class="lg:text-xl">
+                Magpie helps you make your website and brand popular; attracting
+                customers with modern and professional design. Our experienced
+                brand specialist, designers, developers, ui/ux engineers will be
+                at your beck and call for your business or company.
+              </p>
             </div>
 
             <div
@@ -167,7 +220,9 @@
                 />
               </figure>
 
-              <strong class="block text-2xl lg:text-4xl font-bold mb-4">Keshav Neupane</strong>
+              <strong class="block text-2xl lg:text-4xl font-bold mb-4"
+                >Keshav Neupane</strong
+              >
               <p class="font-bold mb-6">Chief Executive Officer</p>
               <p class="text-xl">
                 We are proud to be one of the most leading-edge web development
@@ -353,8 +408,7 @@
             Magpie's Executive
           </h2>
 
-          <div class="flex flex-wrap  gap-4 lg:gap-8 text-center">
-
+          <div class="flex flex-wrap gap-4 lg:gap-8 text-center">
             <div class="person-wrap flex flex-col justify-center items-center">
               <figure
                 class="[&_img]:w-[164px] [&_img]:h-[164px] [&_img]:rounded-full mb-4 border-2 rounded-full p-4 group transition-all border-accent hover:border-4"
@@ -456,7 +510,6 @@
               <span class="text-2xl font-bold">Barsa Chand</span>
               <span class="text-xl">Project Lead</span>
             </div>
-
           </div>
         </div>
       </section>
