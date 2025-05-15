@@ -11,14 +11,14 @@
       rel="stylesheet"
     />
     <title>Magpie SoftTech | Services</title>
-    <script type="module" crossorigin src="./assets/main-DChba7BN.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-8ael5N24.css">
+    <script type="module" crossorigin src="./assets/main-a0xRGzgm.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-DUeTRjwC.css">
   </head>
   <body>
     <header class="header pb-4 bg-primary">
       <div class="containernot max-w-[1440px] mx-auto">
         <nav
-          class="header-nav py-2 rounded-b-lg px-2 lg:px-6 bg-white flex justify-between md:items-center flex-wrap gap-4 shadow-sm"
+          class="header-nav p-4 sm:p-4 rounded-b-lg lg:px-6 bg-white flex justify-between sm:items-center flex-wrap gap-4 shadow-sm transition-all"
         >
           <!-- Header logo -->
           <a href="/" rel="noreferrer noopener">
@@ -34,7 +34,7 @@
           </a>
 
           <!-- Hamburger and Nav items -->
-          <button id="hamburger" class="p-2 text-black sm:hidden">
+          <button id="hamburger" class="px-2 text-black sm:hidden transition-all hover:border-2 rounded-lg ">
             <svg
               class="w-6 h-6"
               fill="none"
@@ -51,9 +51,9 @@
           </button>
 
           <!-- mobile menu -->
-          <nav id="menu" class="hidden flex ">
+          <nav id="menu" class="hidden flex h-full overflow-hidden transition-all p-2">
             <ul
-              class="absolute inset-0 bg-primary z-10 flex flex-col justify-center items-center gap-10 [&_a]:text-white [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-accent [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4"
+              class="absolute inset-0 bg-primary z-10 flex flex-col justify-center items-center gap-10 text-2xl [&_a]:text-white [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-accent [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4"
             >
               <li><a href="/">Home</a></li>
               <li><a href="./services.html">Services</a></li>
@@ -61,7 +61,7 @@
               <li><a href="./contact.html">Contact Us</a></li>
             </ul>
             <!-- icon -->
-            <button id="mobile-hamburger" class="text-white md:hidden z-20 ml-auto">
+            <button id="mobile-hamburger" class="p-2 text-white md:hidden z-20 ml-auto border-2 border-white rounded-lg">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -328,10 +328,10 @@
           <div class="grid md:grid-cols-3 gap-6 lg:gap-12 text-left">
             <!-- Card 1 -->
             <div
-              class="p-8 rounded-xl shadow-md hover:shadow-xs hover:shadow-accent transition-all"
+              class="p-4 lg:p-8 rounded-xl shadow-md hover:shadow-xs hover:shadow-accent transition-all"
             >
               <div class="mb-4">
-                <svg class="w-8 h-8" fill="#f55f42" viewBox="0 0 24 24">
+                <svg class="w-8 h-8" fill="#f55f42" width="28" height="28" viewBox="0 0 24 24">
                   <path
                     d="M12 2a10 10 0 1010 10A10.011 10.011 0 0012 2zm-1 15l-5-5 1.414-1.414L11 14.172l6.586-6.586L19 9z"
                   />
@@ -346,10 +346,10 @@
 
             <!-- Card 2 -->
             <div
-              class="p-8 rounded-xl shadow-md hover:shadow-xs hover:shadow-primary transition-shadow"
+              class="p-4 rounded-xl shadow-md hover:shadow-xs hover:shadow-primary transition-shadow"
             >
               <div class="mb-4">
-                <svg class="w-8 h-8" fill="#f55f42" viewBox="0 0 24 24">
+                <svg class="w-8 h-8" fill="#f55f42" width="28" height="28" viewBox="0 0 24 24">
                   <path d="M4 4h16v2H4zm0 6h10v2H4zm0 6h16v2H4z" />
                 </svg>
               </div>
@@ -362,10 +362,10 @@
 
             <!-- Card 3 -->
             <div
-              class="p-8 rounded-xl shadow-md hover:shadow-xs hover:shadow-accent transition-shadow"
+              class="p-4 rounded-xl shadow-md hover:shadow-xs hover:shadow-accent transition-shadow"
             >
               <div class="mb-4">
-                <svg class="w-8 h-8" fill="#f55f42" viewBox="0 0 24 24">
+                <svg class="w-8 h-8" fill="#f55f42" width="28" height="28" viewBox="0 0 24 24">
                   <path
                     d="M2 12l1.41 1.41L12 4.83l8.59 8.58L22 12 12 2 2 12zm0 6l1.41 1.41L12 10.83l8.59 8.58L22 18 12 8 2 18z"
                   />
@@ -395,7 +395,7 @@
               your business processes, challenges, and requirements.
             </p>
 
-            <div class="web-card-wrap col-span-full md:col-span-1 flex flex-col gap-3 [&_.web-card]:bg-white [&_.web-card]:hover:shadow-2xl [&_.web-card]:hover:shadow-accent">
+            <div class="web-card-wrap col-span-full md:col-span-1 flex flex-col gap-3 [&_.web-card]:bg-white [&_.web-card]:hover:shadow-2xl [&_.web-card]:hover:shadow-accent max-md:[&_h3]:text-xl">
 
               <div class="web-card transition-all hover:scale-105 rounded-lg shadow-lg p-4 lg:p-6">
                 <h3 class="font-semibold underline decoration-primary underline-offset-8">Web development</h3>
@@ -438,7 +438,7 @@
           </div>
 
           <!-- Cards -->
-          <div class="other-cards-wrap grid grid-cols-3 grid-rows-2 gap-2 lg:gap-6 [&_.other-cards]:shadow-lg [&_.other-cards]:hover:shadow-lg [&_.other-cards]:hover:shadow-accent [&_.other-cards]:hover:scale-105 [&_.other-cards]:transition-all [&_.other-cards]:rounded-lg [&_.other-cards]:p-6 [&_.other-cards]:group">
+          <div class="other-cards-wrap grid grid-cols-3 grid-rows-2 gap-2 lg:gap-6 [&_.other-cards]:shadow-lg [&_.other-cards]:hover:shadow-lg [&_.other-cards]:hover:shadow-accent [&_.other-cards]:hover:scale-105 [&_.other-cards]:transition-all [&_.other-cards]:rounded-lg [&_.other-cards]:p-6 [&_.other-cards]:group max-md:[&_h3]:text-xl">
             <div class="other-cards col-span-full md:col-span-1 md:row-span-2 md:row-end-3">
               
               <h3 class="underline underline-offset-8 mb-2 lg:mb-6 font-semibold">Software Training and Internships</h3>
