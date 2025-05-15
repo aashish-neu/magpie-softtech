@@ -13,26 +13,72 @@
     <title>Magpie SoftTech</title>
   </head>
   <body>
-    <header
-      class="header pb-4 bg-[url(/src/assets/images/home-banner-img.jpg)] bg-cover bg-no-repeat bg-center h-[100vh] md:h-[80vh]"
-    >
+    <header class="header pb-4 bg-primary">
       <div class="containernot max-w-[1440px] mx-auto">
         <nav
-          class="header-nav py-2 rounded-b-lg px-2 lg:px-6 bg-white flex justify-between items-center flex-wrap gap-4 max-md:justify-center shadow-sm"
+          class="header-nav py-2 rounded-b-lg px-2 lg:px-6 bg-white flex justify-between md:items-center flex-wrap gap-4 shadow-sm"
         >
+          <!-- Header logo -->
           <a href="/" rel="noreferrer noopener">
             <figure class="header-logo max-w-20 mr-4">
               <img
                 src="src/assets/images/magpie-transparent-logo.png"
-                width="584"
-                height="491"
+                width="70"
+                height="70"
                 alt="Magpie Brand Logo"
                 loading="lazy"
               />
             </figure>
           </a>
+
+          <!-- Hamburger and Nav items -->
+          <button id="hamburger" class="p-2 text-black sm:hidden">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- mobile menu -->
+          <nav id="menu" class="hidden flex ">
+            <ul
+              class="absolute inset-0 bg-primary z-10 flex flex-col justify-center items-center gap-10 [&_a]:text-white [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-accent [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4"
+            >
+              <li><a href="/">Home</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./about-us.html">About Us</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+            <!-- icon -->
+            <button id="mobile-hamburger" class="text-white md:hidden z-20 ml-auto">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </nav>
+
+          <!-- desktop menu -->
           <ul
-            class="max-sm:hidden header-links-wrapper flex flex-wrap gap-6 lg:gap-12 [&_a]:text-primary [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-accent [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4"
+            class="header-links-wrapper hidden sm:flex flex-wrap gap-6 lg:gap-12 [&_a]:text-primary [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-accent [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4"
           >
             <li><a href="/">Home</a></li>
             <li><a href="./services.html">Services</a></li>
@@ -40,33 +86,21 @@
             <li><a href="./contact.html">Contact Us</a></li>
           </ul>
         </nav>
-
-        <section class="hero pt-[25vh] lg:pt-[12vh]">
-          <div class="container">
-            <div
-              class="hero-content p-4 lg:py-12 rounded-lg bg-primary/90 text-white ml-auto text- max-w-[60ch] shadow-2xl shadow-primary text-shadow-xs text-shadow-black text-center"
-            >
-              <h1 class="text-2xl lg:text-4xl font-semibold mb-4 lg:mb-6">
-                We create
-                <span class="text-accent text-shadow-none">Websites</span> for
-                <span class="text-accent text-shadow-none">Businessess</span>
-                that want <span class="text-accent">results</span>.
-              </h1>
-              <p class="text-xl lg:text-2xl">
-                We design and build customs websites to drive leads, close deals
-                and grow your business.
-              </p>
-
-              <button
-                class="mt-4 lg:mt-6 border px-3 py-2 lg:px-7 lg:py-3 text-xl lg:text-2xl transition-all rounded-sm hover:cursor-pointer hover:bg-white hover:text-primary"
-              >
-                <a href="./contact.html" rel="noreferrer noopener">Contact Us</a>
-              </button>
-            </div>
-          </div>
-        </section>
-        <!-- ./Section {Hero} -->
       </div>
+
+      <!-- Header Title -->
+      <section class="header-title text-white py-6 lg:py-12 text-center">
+        <div class="container">
+          <h1 class="text-5xl lg:text-6xl xl:text-7xl mb-4 lg:mb-6 xl:mb-8">
+            Magpie <span class="">SoftTech</span>
+          </h1>
+          <p class="text-xl">
+            <strong>Dedicated</strong> developers, designers, brand specialist
+            and support team have made our company <strong>reliable</strong> and
+            <strong>easy to work</strong> with
+          </p>
+        </div>
+      </section>
     </header>
 
     <main>
