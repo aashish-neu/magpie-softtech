@@ -11,28 +11,76 @@
       rel="stylesheet"
     />
     <title>Magpie SoftTech | Services</title>
-    <script type="module" crossorigin src="./assets/main-CGgy1u3l.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-Ab7hvQqw.css">
+    <script type="module" crossorigin src="./assets/main-DChba7BN.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-8ael5N24.css">
   </head>
   <body>
     <header class="header pb-4 bg-primary">
       <div class="containernot max-w-[1440px] mx-auto">
         <nav
-          class="header-nav py-2 rounded-b-lg px-2 lg:px-6 bg-white flex justify-between items-center flex-wrap gap-4 max-md:justify-center shadow-sm"
+          class="header-nav py-2 rounded-b-lg px-2 lg:px-6 bg-white flex justify-between md:items-center flex-wrap gap-4 shadow-sm"
         >
+          <!-- Header logo -->
           <a href="/" rel="noreferrer noopener">
             <figure class="header-logo max-w-20 mr-4">
               <img
                 src="./assets/magpie-transparent-logo-CyVg7ZI8.png"
-                width="584"
-                height="491"
+                width="70"
+                height="70"
                 alt="Magpie Brand Logo"
                 loading="lazy"
               />
             </figure>
           </a>
+
+          <!-- Hamburger and Nav items -->
+          <button id="hamburger" class="p-2 text-black sm:hidden">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- mobile menu -->
+          <nav id="menu" class="hidden flex ">
+            <ul
+              class="absolute inset-0 bg-primary z-10 flex flex-col justify-center items-center gap-10 [&_a]:text-white [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-accent [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4"
+            >
+              <li><a href="/">Home</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./about-us.html">About Us</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+            <!-- icon -->
+            <button id="mobile-hamburger" class="text-white md:hidden z-20 ml-auto">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </nav>
+
+          <!-- desktop menu -->
           <ul
-            class="max-sm:hidden header-links-wrapper flex flex-wrap gap-6 lg:gap-12 [&_a]:text-primary [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-accent [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4"
+            class="header-links-wrapper hidden sm:flex flex-wrap gap-6 lg:gap-12 [&_a]:text-primary [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-accent [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4"
           >
             <li><a href="/">Home</a></li>
             <li><a href="./services.html">Services</a></li>
@@ -41,12 +89,19 @@
           </ul>
         </nav>
       </div>
+
       <!-- Header Title -->
       <section class="header-title text-white py-6 lg:py-12 text-center">
-        <h1 class="text-5xl lg:text-6xl xl:text-7xl mb-4 lg:mb-6 xl:mb-8">
-          Contact Us
-        </h1>
-        <p class="text-xl">Always ready to satisfy your needs</p>
+        <div class="container">
+          <h1 class="text-5xl lg:text-6xl xl:text-7xl mb-4 lg:mb-6 xl:mb-8">
+            Magpie <span class="">SoftTech</span>
+          </h1>
+          <p class="text-xl">
+            <strong>Dedicated</strong> developers, designers, brand specialist
+            and support team have made our company <strong>reliable</strong> and
+            <strong>easy to work</strong> with
+          </p>
+        </div>
       </section>
     </header>
 
@@ -65,11 +120,11 @@
 
                     <ul class="[&_li]:not-last:mb-4 mb-4">
                         <li class="">
-                            <a class="inline-flex items-center gap-4 text-xl transition-all hover:[&_svg]:scale-105 [&_p]:transition-all hover:[&_p]:border-2  hover:[&_p]:p-2 hover:[&_p]:rounded-lg hover:[&_p]:text-primary" href="mailto:magpiesofttech.gmail.com" rel="noreferrer noopener">
+                            <a class="inline-flex items-center gap-4 text-xl transition-all hover:[&_svg]:scale-105 [&_p]:transition-all hover:[&_p]:border-2  hover:[&_p]:p-2 hover:[&_p]:rounded-lg hover:[&_p]:text-primary" href="mailto:magpiesofttech@gmail.com?subject=Hello%20there&body=I%20want%20to%20inquire%20about%20a%20project." rel="noreferrer noopener">
                                 <figure class="">
                                     <svg width="34px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.624"></g><g id="SVGRepo_iconCarrier"> <path d="M3 8L8.44992 11.6333C9.73295 12.4886 10.3745 12.9163 11.0678 13.0825C11.6806 13.2293 12.3194 13.2293 12.9322 13.0825C13.6255 12.9163 14.2671 12.4886 15.5501 11.6333L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z" stroke="#f55f42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                                 </figure>
-                                <p>magpiesofttech.gmail.com</p>
+                                <p>magpiesofttech@gmail.com</p>
                             </a>
                         </li>
 
@@ -78,7 +133,7 @@
                                 <figure>
                                     <svg class="transition-all" width="34px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 5.5C21 14.0604 14.0604 21 5.5 21C5.11378 21 4.73086 20.9859 4.35172 20.9581C3.91662 20.9262 3.69906 20.9103 3.50103 20.7963C3.33701 20.7019 3.18146 20.5345 3.09925 20.364C3 20.1582 3 19.9181 3 19.438V16.6207C3 16.2169 3 16.015 3.06645 15.842C3.12515 15.6891 3.22049 15.553 3.3441 15.4456C3.48403 15.324 3.67376 15.255 4.05321 15.117L7.26005 13.9509C7.70153 13.7904 7.92227 13.7101 8.1317 13.7237C8.31637 13.7357 8.49408 13.7988 8.64506 13.9058C8.81628 14.0271 8.93713 14.2285 9.17882 14.6314L10 16C12.6499 14.7999 14.7981 12.6489 16 10L14.6314 9.17882C14.2285 8.93713 14.0271 8.81628 13.9058 8.64506C13.7988 8.49408 13.7357 8.31637 13.7237 8.1317C13.7101 7.92227 13.7904 7.70153 13.9509 7.26005L13.9509 7.26005L15.117 4.05321C15.255 3.67376 15.324 3.48403 15.4456 3.3441C15.553 3.22049 15.6891 3.12515 15.842 3.06645C16.015 3 16.2169 3 16.6207 3H19.438C19.9181 3 20.1582 3 20.364 3.09925C20.5345 3.18146 20.7019 3.33701 20.7963 3.50103C20.9103 3.69907 20.9262 3.91662 20.9581 4.35173C20.9859 4.73086 21 5.11378 21 5.5Z" stroke="#f55f42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                                 </figure>
-                                <p>Call: 985102172</p>
+                                <p>Call: 9851021752</p>
                             </a>
                         </li>
 

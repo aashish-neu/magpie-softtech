@@ -12,11 +12,11 @@
     />
     <title>Magpie SoftTech | Services</title>
   </head>
-  <body>
+  <body id="main-body">
     <header class="header pb-4 bg-primary">
       <div class="containernot max-w-[1440px] mx-auto">
         <nav
-          class="header-nav py-2 rounded-b-lg px-2 lg:px-6 bg-white flex justify-between md:items-center flex-wrap gap-4 shadow-sm"
+          class="header-nav p-4 sm:p-4 rounded-b-lg lg:px-6 bg-white flex justify-between sm:items-center flex-wrap gap-4 shadow-sm transition-all"
         >
           <!-- Header logo -->
           <a href="/" rel="noreferrer noopener">
@@ -32,7 +32,7 @@
           </a>
 
           <!-- Hamburger and Nav items -->
-          <button id="hamburger" class="p-2 text-black sm:hidden">
+          <button id="hamburger" class="px-2 text-black sm:hidden transition-all hover:border-2 rounded-lg ">
             <svg
               class="w-6 h-6"
               fill="none"
@@ -49,9 +49,9 @@
           </button>
 
           <!-- mobile menu -->
-          <nav id="menu" class="hidden flex ">
+          <nav id="menu" class="hidden flex h-full overflow-hidden transition-all p-2">
             <ul
-              class="absolute inset-0 bg-primary z-10 flex flex-col justify-center items-center gap-10 [&_a]:text-white [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-accent [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4"
+              class="absolute inset-0 bg-primary z-10 flex flex-col justify-center items-center gap-10 text-2xl [&_a]:text-white [&_a]:font-bold [&_a]:transition-all [&_a]:hover:text-accent [&_a]:hover:underline [&_a]:hover:underline-offset-8 [&_a]:hover:decoration-4"
             >
               <li><a href="/">Home</a></li>
               <li><a href="./services.html">Services</a></li>
@@ -59,7 +59,7 @@
               <li><a href="./contact.html">Contact Us</a></li>
             </ul>
             <!-- icon -->
-            <button id="mobile-hamburger" class="text-white md:hidden z-20 ml-auto">
+            <button id="mobile-hamburger" class="p-2 text-white md:hidden z-20 ml-auto border-2 border-white rounded-lg">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -237,13 +237,13 @@
       <section class="py-4 lg:py-6">
         <div class="container">
           <h2
-            class="block text-4xl xl:text-5xl mb-6 lg:mb-12 underline decoration-accent underline-offset-8 decoration-4"
+            class="block text-4xl xl:text-5xl mb-10 lg:mb-12 underline decoration-accent underline-offset-8 decoration-4"
           >
             Values
           </h2>
 
           <ul
-            class="[&_strong]:max-w-[266px] [&_strong]:text-3xl [&_li]:mb-6 [&_li]:border-b-2 [&_li]:border-primary [&_li]:pb-4 lg:[&_p]:text-xl"
+            class="[&_strong]:max-w-[266px] [&_strong]:text-2xl md:[&_strong]:text-3xl [&_li]:mb-6 [&_li]:border-b-2 [&_li]:border-primary [&_li]:pb-4 lg:[&_p]:text-xl"
           >
             <li class="flex flex-wrap justify-start items-center">
               <div
@@ -406,7 +406,7 @@
             Magpie's Executive
           </h2>
 
-          <div class="flex flex-wrap gap-4 lg:gap-8 text-center">
+          <div class="flex flex-wrap max-sm:justify-center gap-4 lg:gap-8 text-center">
             <div class="person-wrap flex flex-col justify-center items-center">
               <figure
                 class="[&_img]:w-[164px] [&_img]:h-[164px] [&_img]:rounded-full mb-4 border-2 rounded-full p-4 group transition-all border-accent hover:border-4"

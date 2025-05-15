@@ -60,6 +60,10 @@
   padding-inline: 20px;
 }
 
+@utility hamburger-styles {
+  transform: -translateX(150%) !important;
+}
+
 @utility service-link {
   display: block;
   margin-top: 18px;
